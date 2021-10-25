@@ -1,21 +1,10 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :movies, only:[:index]
-  resources :lists, only:[:index, :create, :show]
-  resources :bookmarks, only:[:create, :new, :destroy]
+  root to: 'lists#index'
+  resources :lists, only:[:index, :create, :show] do
+    resources :reviews, only: :create
+    resources :bookmarks, only:[:new, :create]
+  end
+  resources :bookmarks, only: :destroy
+  resources :reviews, only: :destroy
 end
-
-# @restaurant = Restaurant.find(params[:restaurant_id])
-    # @review = Review.new(review_params)
-    # @review.restaurant = @restaurant
-    # if @review.save
-    #   redirect_to restaurant_path(@restaurant)
-    # else
-    #   render 'restaurants/show'
-    # end
-
-    # private
-
-  # def review_params
-  #   params.require(:review).permit(:content)
-  # end
