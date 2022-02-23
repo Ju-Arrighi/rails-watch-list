@@ -4,3 +4,7 @@
 2021-10-25 20:08:43.167 -03 [70739] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2021-10-25 20:08:43.171 -03 [70740] LOG:  database system was shut down at 2021-10-25 20:08:06 -03
 2021-10-25 20:08:43.180 -03 [70739] LOG:  database system is ready to accept connections
+2021-10-26 09:38:26.454 -03 [70739] LOG:  received smart shutdown request
+2021-10-26 09:38:26.461 -03 [70739] LOG:  background worker "logical replication launcher" (PID 70746) exited with exit code 1
+2021-10-26 09:38:26.462 -03 [70741] LOG:  shutting down
+2021-10-26 09:38:26.489 -03 [70739] LOG:  database system is shut down

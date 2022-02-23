@@ -203,6 +203,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
@@ -230,4 +231,4 @@ RUBY VERSION
    ruby 2.7.3p183
 
 BUNDLED WITH
-   2.2.23
+   2.2.32
