@@ -3,6 +3,9 @@
 <h2>My lists</h2>
 <% @lists.each do |list| %>
 <%= link_to "#{list.name}", list_path(list[:id]) %>
+  <%# <% if list.photo.attached? %> %>
+  <%# <%= cl_image_tag list.photo.key, width: 400, height: 300, crop: :fill %> %>
+  <%# <% end %> %>
 <% end %>
 
 <%= link_to "Create a movie list", new_list_path %>
